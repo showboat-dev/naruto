@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Login.css" />
+</head>
+
+<body>
+    <div class="login">
+        <p class="p1"></p>
+        <p class="p2"></p>
+        <h1>login</h1>
+        <form>
+            <input type="text" placeholder="账号"></input>
+            <input type="password" placeholder="密码"></input>
+            <div class="denglu">登录</div>
+        </form>
+    </div>
+    <script>
+        //获取元素
+        var input = document.querySelectorAll('input');
+        var denglu = document.querySelector('.denglu');
+        var inner1 = input[0].value.length;
+        var inner2 = input[1].value.length;
+        var p1 = document.querySelector('.p1');
+        var p2 = document.querySelector('.p2');
+        //获得焦点和失去焦点
+        input[0].onfocus = function() {
+            input[0].setAttribute("placeholder", " ");
+            input[0].style.outline = "none";
+        }
+        input[1].onfocus = function() {
+                input[1].setAttribute("placeholder", " ");
+                input[1].style.outline = "none";
+            }
+            //点击事件
+        denglu.addEventListener('click', function() {
+            if (!input[0].value) {
+                p1.style.display = 'block';
+                p1.innerHTML = "账号不能为空!";
+                p1.style.color = 'red';
+            } else if (input[0].value.length != 10) {
+                p1.style.display = 'block';
+                p1.innerHTML = "账号必须为十位数!";
+                p1.style.color = 'red';
+            } else {
+                p1.style.display = 'block';
+                p1.innerHTML = "输入正确！";
+                p1.style.color = '#3ab053';
+            }
+            if (!input[1].value) {
+                p2.style.display = 'block';
+                p2.innerHTML = "密码不能为空!";
+                p2.style.color = 'red';
+            } else if (input[1].value.length != 6) {
+                p2.style.display = 'block';
+                p2.innerHTML = "密码必须为六位数!";
+                p2.style.color = 'red';
+            } else {
+                p2.style.display = 'block';
+                p2.innerHTML = "输入正确！";
+                p2.style.color = '#3ab053';
+            }
+        })
+    </script>
+</body>
+
+</html>

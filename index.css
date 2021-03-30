@@ -1,0 +1,520 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.middle {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.current {
+    background-color: white;
+}
+
+body {
+    position: relative;
+}
+
+
+/* 第一部分：头部 */
+
+li {
+    list-style: none;
+}
+
+.menu {
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #555;
+    position: fixed;
+    top: 0px;
+    z-index: 6;
+}
+
+.nav {
+    position: relative;
+    height: 80px;
+    width: 1140px;
+    margin: 0 auto;
+    background-color: #555;
+    overflow: hidden;
+}
+
+
+/* 头像 */
+
+.logo {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 9px;
+    border: 1px solid none;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 导航栏 */
+
+.daohang {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    height: 80px;
+    width: 280px;
+}
+
+.daohang li {
+    height: 80px;
+    width: 70px;
+    float: left;
+    line-height: 80px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.daohang li a {
+    color: rgb(239, 244, 248);
+}
+
+.daohang li a:hover {
+    color: aquamarine;
+}
+
+
+/* 动画 */
+
+.donghua {
+    display: inline-block;
+    height: 80px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100px);
+    overflow: hidden;
+}
+
+.donghua h1 {
+    position: relative;
+    top: 20px;
+    display: block;
+    height: 40px;
+    width: 544px;
+    color: red;
+}
+
+
+/* 搜索 */
+
+input {
+    display: block;
+    position: absolute;
+    left: 1090px;
+    top: 27px;
+    display: none;
+    border: none;
+    width: 162px;
+    height: 30px;
+    outline: none;
+}
+
+.search {
+    position: absolute;
+    left: 1090px;
+    top: 11px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #555 url(phothos/search.png) no-repeat center;
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+
+
+/* 第二部分：中间 */
+
+.next {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 1000px;
+    background-color: pink;
+}
+
+
+/* 黑边 */
+
+.black_left {
+    width: 189.6px;
+    height: 1000px;
+    background-color: rgba(177, 10, 38, 0.938);
+}
+
+.black_left li {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-style: italic;
+    font-size: 50px;
+    color: white;
+}
+
+.black_left li img {
+    position: relative;
+    top: 91px;
+    width: 100%;
+    height: 209px
+}
+
+.black_right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 189.6px;
+    height: 1000px;
+    background-color: rgba(177, 10, 38, 0.938);
+}
+
+.black_right li {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-style: italic;
+    font-size: 50px;
+    color: white;
+}
+
+.black_right li img {
+    position: relative;
+    width: 100%;
+    height: 209px;
+    top: 91px;
+}
+
+
+/* 轮播图 */
+
+.context {
+    position: absolute;
+    background: url(phothos/bgc.jfif);
+    top: 0px;
+    height: 100%;
+    left: 189.6px;
+}
+
+.turn {
+    position: relative;
+    left: 11px;
+    width: 448px;
+    height: 252px;
+    background-color: blue;
+    margin: 10px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.turn .inner {
+    position: absolute;
+    left: 0px;
+    width: 3000px;
+    height: 100%;
+    float: left;
+}
+
+.turn img {
+    width: 448px;
+    height: 100%;
+}
+
+.turn a:nth-of-type(1) {
+    z-index: 4;
+    display: inline-block;
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.turn a:nth-of-type(2) {
+    z-index: 4;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.turn .circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.turn .circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* 二维码 */
+
+.erweima {
+    width: 214px;
+    height: 210px;
+    background-color: purple;
+    position: absolute;
+    left: 484px;
+    top: 24px;
+    animation: move4 1s linear infinite;
+}
+
+.erweima img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 视频 */
+
+.vedio {
+    position: absolute;
+    left: 20px;
+    top: 212px;
+}
+
+
+/* 音频 */
+
+iframe {
+    position: absolute;
+    left: 20px;
+    bottom: -250px;
+}
+
+
+/* 狂笑四杰 */
+
+.zixun {
+    position: absolute;
+    width: 403px;
+    height: 252px;
+    right: 20px;
+    top: 10px;
+}
+
+.zixun img {
+    width: 100%;
+    height: 100%;
+}
+
+.big {
+    position: absolute;
+    width: 604px;
+    height: 378px;
+    right: 20px;
+    top: 270px;
+    display: none;
+    overflow: hidden;
+    z-index: 6;
+}
+
+.big img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.zixun .enlarge {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(187, 209, 108);
+    opacity: .5;
+    display: none;
+}
+
+
+/* 底部下拉菜单栏的样式 */
+
+.bottom {
+    position: relative;
+    width: 100%;
+    height: 557px;
+    background-color: #272e35;
+    margin-top: 172px;
+}
+
+.bottom ul {
+    float: left;
+    height: 500px;
+    width: 85px;
+    margin-right: 50px;
+    transform: translate(208px, 49px);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bottom ul span {
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(221, 47, 47);
+    display: block;
+    background-color: #503535;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    z-index: 9;
+}
+
+.bottom ul div {
+    position: absolute;
+    top: -450px;
+    width: 100%;
+}
+
+.bottom ul div li {
+    text-align: center;
+    font-size: 14px;
+    color: brown;
+    height: 50px;
+    width: 100%;
+    background-color: #968080;
+    line-height: 50px;
+}
+
+.bottom ul div li a {
+    color: aqua;
+}
+
+.bottom ul div li:hover {
+    background-color: rgb(106, 196, 136);
+    color: coral;
+}
+
+
+/* 下面视频的样式 */
+
+.bottom video {
+    position: absolute;
+    right: 52px;
+    bottom: 175px;
+    border-radius: 13px;
+}
+
+
+/* 二维码的样式 */
+
+.last {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    animation: move 12s infinite;
+    animation-play-state: '';
+    z-index: 7;
+}
+
+.last img {
+    width: 100%;
+    height: 100%;
+}
+
+.last-vedio {
+    width: 600px;
+    height: 300px;
+}
+
+.last:hover {
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-1319.2px, 0);
+    }
+    50% {
+        transform: translate(-1319.2px, -552px);
+    }
+    75% {
+        transform: translate(0, -552px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(0, 500px);
+    }
+}
+
+@keyframes move3 {
+    from {
+        transform: translate(0, 500px);
+    }
+    to {
+        transform: translate(0, 0px);
+    }
+}
+
+@keyframes move4 {
+    0% {
+        transform: perspective(500px) translateZ(0px);
+    }
+    25% {
+        transform: perspective(500px) translateZ(10px);
+    }
+    50% {
+        transform: perspective(500px) translateZ(0px);
+    }
+    100% {
+        transform: perspective(500px) translateZ(-10px);
+    }
+}
